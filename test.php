@@ -1,3 +1,7 @@
+<?php
+include "./connection.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,8 +18,7 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -35,18 +38,16 @@
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
     <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
             <span class="sr-only">Loading...</span>
         </div>
     </div>
     <!-- Spinner End -->
 
-
+ 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5 wow fadeIn"
-        data-wow-delay="0.1s">
+    <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
         <a href="index.html" class="navbar-brand d-block d-lg-none">
             <h1 class="text-primary fw-bold m-0">Projects</h1>
         </a>
@@ -199,7 +200,7 @@
                                     <div class="row g-4 portfolio-container wow " data-wow-delay="0.1s">
                                         <div class="col-lg-4 col-md-6 portfolio-item constructions">
                                             <div class="portfolio-img rounded overflow-hidden">
-                                                <img class="img-fluid" src="img/constructions/construction1.png" alt="image">
+                                                <img class="img-fluid" src="img/construction/construction1.png" alt="image">
                                                 <div class="portfolio-btn">
                                                     <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
                                                         target="_blank"
@@ -223,7 +224,7 @@
                                         </div>
                                         <div class="col-lg-4 col-md-6 portfolio-item constructions">
                                             <div class="portfolio-img rounded overflow-hidden">
-                                                <img class="img-fluid" src="img/constructions/construction2.png" alt="image">
+                                                <img class="img-fluid" src="img/construction/construction2.png" alt="image">
                                                 <div class="portfolio-btn">
                                                     <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
                                                         target="_blank"
@@ -247,7 +248,7 @@
                                         </div>
                                         <div class="col-lg-4 col-md-6 portfolio-item constructions">
                                             <div class="portfolio-img rounded overflow-hidden">
-                                                <img class="img-fluid" src="img/constructions/construction3.png" alt="image">
+                                                <img class="img-fluid" src="img/construction/construction3.png" alt="image">
                                                 <div class="portfolio-btn">
                                                     <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
                                                         target="_blank"
@@ -327,7 +328,7 @@
                                         </div>
                                         <div class="col-lg-4 col-md-6 portfolio-item constructions">
                                             <div class="portfolio-img rounded overflow-hidden">
-                                                <img class="img-fluid" src="img/constructions/construction4.png" alt="image">
+                                                <img class="img-fluid" src="img/construction/construction4.png" alt="image">
                                                 <div class="portfolio-btn">
                                                     <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
                                                         target="_blank"
@@ -407,7 +408,7 @@
                                     <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.1s">
                                         <div class="col-lg-4 col-md-6 portfolio-item constructions">
                                             <div class="portfolio-img rounded overflow-hidden">
-                                                <img class="img-fluid" src="img/constructions/construction1.png" alt="image">
+                                                <img class="img-fluid" src="img/construction/construction1.png" alt="image">
                                                 <div class="portfolio-btn">
                                                     <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
                                                         target="_blank"
@@ -431,7 +432,7 @@
                                         </div>
                                         <div class="col-lg-4 col-md-6 portfolio-item constructions">
                                             <div class="portfolio-img rounded overflow-hidden">
-                                                <img class="img-fluid" src="img/constructions/construction2.png" alt="image">
+                                                <img class="img-fluid" src="img/construction/construction2.png" alt="image">
                                                 <div class="portfolio-btn">
                                                     <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
                                                         target="_blank"
@@ -455,7 +456,7 @@
                                         </div>
                                         <div class="col-lg-4 col-md-6 portfolio-item constructions">
                                             <div class="portfolio-img rounded overflow-hidden">
-                                                <img class="img-fluid" src="img/constructions/construction3.png" alt="image">
+                                                <img class="img-fluid" src="img/construction/construction3.png" alt="image">
                                                 <div class="portfolio-btn">
                                                     <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
                                                         target="_blank"
@@ -535,7 +536,7 @@
                                         </div>
                                         <div class="col-lg-4 col-md-6 portfolio-item constructions">
                                             <div class="portfolio-img rounded overflow-hidden">
-                                                <img class="img-fluid" src="img/constructions/construction4.png" alt="image">
+                                                <img class="img-fluid" src="img/construction/construction4.png" alt="image">
                                                 <div class="portfolio-btn">
                                                     <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
                                                         target="_blank"
@@ -800,30 +801,25 @@
             <div class="row g-5">
                 <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.5s">
                     <ul class="nav nav-pills rounded mb-5 g-4">
-                        <li class="nav-item w-50 shadow"> <button class="nav-link w-100 fs-5 active"
-                                data-bs-toggle="pill" href="#webDesignAndDevelopment">
+                        <li class="nav-item w-50 shadow"> <button class="nav-link w-100 fs-5 active" data-bs-toggle="pill" href="#webDesignAndDevelopment">
                                 <div class="service-item d-flex flex-column flex-sm-row rounded h-100 p-4 p-lg-5">
-                                    <div class="bg-icon flex-shrink-0 mb-3"> <i
-                                            class="fas fa-laptop-code fa-2x text-dark"></i> </div>
+                                    <div class="bg-icon flex-shrink-0 mb-3"> <i class="fas fa-laptop-code fa-2x text-dark"></i> </div>
                                     <div class="ms-sm-4">
                                         <h4 class="mb-3">Web Design & Development</h4>
                                     </div>
                                 </div>
                             </button>
                         </li>
-                        <li class="nav-item w-50 shadow"> <button class="nav-link w-100 fs-5" data-bs-toggle="pill"
-                                href="#graphicDesign">
+                        <li class="nav-item w-50 shadow"> <button class="nav-link w-100 fs-5" data-bs-toggle="pill" href="#graphicDesign">
                                 <div class="service-item d-flex flex-column flex-sm-row rounded h-100 p-4 p-lg-5">
-                                    <div class="bg-icon flex-shrink-0 mb-3"> <i
-                                            class="fas fa-bezier-curve fa-2x text-dark"></i> </div>
+                                    <div class="bg-icon flex-shrink-0 mb-3"> <i class="fas fa-bezier-curve fa-2x text-dark"></i> </div>
                                     <div class="ms-sm-4">
                                         <h4 class="mb-3">Graphic Design</h4>
                                     </div>
                                 </div>
                             </button>
                         </li>
-                        <li class="nav-item w-50 shadow"> <button class="nav-link w-100 fs-5" data-bs-toggle="pill"
-                                href="#digitalMarketing">
+                        <li class="nav-item w-50 shadow"> <button class="nav-link w-100 fs-5" data-bs-toggle="pill" href="#digitalMarketing">
                                 <div class="service-item d-flex flex-column flex-sm-row rounded h-100 p-4 p-lg-5">
                                     <div class="bg-icon flex-shrink-0"> <i class="fa fa-bullhorn fa-2x text-dark"></i>
                                     </div>
@@ -833,8 +829,7 @@
                                 </div>
                             </button>
                         </li>
-                        <li class="nav-item w-50 shadow"> <button class="nav-link w-100 fs-5" data-bs-toggle="pill"
-                                href="#contentMarketing">
+                        <li class="nav-item w-50 shadow"> <button class="nav-link w-100 fs-5" data-bs-toggle="pill" href="#contentMarketing">
                                 <div class="service-item d-flex flex-column flex-sm-row rounded h-100 p-4 p-lg-5">
                                     <div class="bg-icon flex-shrink-0"> <i class="fa fa-edit fa-2x text-dark"></i>
                                     </div>
@@ -879,209 +874,179 @@
                                         </div>
                                     </div>
                                     <div class="row g-4 portfolio-container wow " data-wow-delay="0.1s">
-                                        <div class="col-lg-3 col-md-6 portfolio-item constructions">
+                                        <?php
+                                        $sqlWD = "SELECT * FROM previewdata where category = 'webDevelopment'";
+                                        $resultWD = $conn->query($sqlWD);
+                                        // var_dump($resultWD);
+                                        $countWD = $resultWD->rowCount();
+                                        if ($countWD > 0) {
+                                            while ($rowWD = $resultWD->fetch(PDO::FETCH_ASSOC)) {
+                                        ?>
+                                                <div class="col-lg-4 col-md-6 portfolio-item <?php echo $rowWD['typeOf'] ?>">
+                                                    <div class="portfolio-img rounded overflow-hidden">
+                                                        <img class="img-fluid" src="img/webDevelopment/<?php echo ($rowWD['typeOf'] . '/' . $rowWD['previewImage']) ?>" alt="<?php echo $rowWD['previewImage'] ?>">
+                                                        <div class="portfolio-btn">
+                                                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" target="_blank" href="https://<?php echo $rowWD['previewURL'] ?>">
+                                                                <i class="fa fa-eye"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                        <?php
+                                            }
+                                        }
+                                        ?>
+
+                                        <!-- <div class="col-lg-4 col-md-6 portfolio-item constructions">
                                             <div class="portfolio-img rounded overflow-hidden">
-                                                <img class="img-fluid"
-                                                    src="img/webDevelopment/constructions/construction1.png"
-                                                    alt="image">
+                                                <img class="img-fluid" src="img/webDevelopment/construction/construction1.png" alt="image">
                                                 <div class="portfolio-btn">
-                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
-                                                        target="_blank"
-                                                        href="https://asetechnologies.in/projects/construction1/">
+                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" target="_blank" href="https://asetechnologies.in/projects/construction1/">
                                                         <i class="fa fa-eye"></i>
                                                     </a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-3 col-md-6 portfolio-item medical">
+                                        <div class="col-lg-4 col-md-6 portfolio-item medical">
                                             <div class="portfolio-img rounded overflow-hidden">
-                                                <img class="img-fluid" src="img/webDevelopment/medical/dental1.png"
-                                                    alt="image">
+                                                <img class="img-fluid" src="img/webDevelopment/medical/dental1.png" alt="image">
                                                 <div class="portfolio-btn">
-                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
-                                                        target="_blank"
-                                                        href="https://asetechnologies.in/projects/dental1">
+                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" target="_blank" href="https://asetechnologies.in/projects/dental1">
                                                         <i class="fa fa-eye"></i>
                                                     </a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-3 col-md-6 portfolio-item constructions">
+                                        <div class="col-lg-4 col-md-6 portfolio-item constructions">
                                             <div class="portfolio-img rounded overflow-hidden">
-                                                <img class="img-fluid"
-                                                    src="img/webDevelopment/constructions/construction2.png"
-                                                    alt="image">
+                                                <img class="img-fluid" src="img/webDevelopment/constructions/construction2.png" alt="image">
                                                 <div class="portfolio-btn">
-                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
-                                                        target="_blank"
-                                                        href="https://asetechnologies.in/projects/construction2/">
+                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" target="_blank" href="https://asetechnologies.in/projects/construction2/">
                                                         <i class="fa fa-eye"></i>
                                                     </a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-3 col-md-6 portfolio-item medical">
+                                        <div class="col-lg-4 col-md-6 portfolio-item medical">
                                             <div class="portfolio-img rounded overflow-hidden">
-                                                <img class="img-fluid" src="img/webDevelopment/medical/dental2.png"
-                                                    alt="image">
+                                                <img class="img-fluid" src="img/webDevelopment/medical/dental2.png" alt="image">
                                                 <div class="portfolio-btn">
-                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
-                                                        target="_blank"
-                                                        href="https://asetechnologies.in/projects/dental2/">
+                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" target="_blank" href="https://asetechnologies.in/projects/dental2/">
                                                         <i class="fa fa-eye"></i>
                                                     </a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-3 col-md-6 portfolio-item constructions">
+                                        <div class="col-lg-4 col-md-6 portfolio-item constructions">
                                             <div class="portfolio-img rounded overflow-hidden">
-                                                <img class="img-fluid"
-                                                    src="img/webDevelopment/constructions/construction3.png"
-                                                    alt="image">
+                                                <img class="img-fluid" src="img/webDevelopment/constructions/construction3.png" alt="image">
                                                 <div class="portfolio-btn">
-                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
-                                                        target="_blank"
-                                                        href="https://asetechnologies.in/projects/construction3/">
+                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" target="_blank" href="https://asetechnologies.in/projects/construction3/">
                                                         <i class="fa fa-eye"></i>
                                                     </a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-3 col-md-6 portfolio-item medical">
+                                        <div class="col-lg-4 col-md-6 portfolio-item medical">
                                             <div class="portfolio-img rounded overflow-hidden">
-                                                <img class="img-fluid" src="img/webDevelopment/medical/dental3.png"
-                                                    alt="image">
+                                                <img class="img-fluid" src="img/webDevelopment/medical/dental3.png" alt="image">
                                                 <div class="portfolio-btn">
-                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
-                                                        target="_blank" href="https://ase-dental4.netlify.app/">
+                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" target="_blank" href="https://ase-dental4.netlify.app/">
                                                         <i class="fa fa-eye"></i>
                                                     </a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-3 col-md-6 portfolio-item education">
+                                        <div class="col-lg-4 col-md-6 portfolio-item education">
                                             <div class="portfolio-img rounded overflow-hidden">
-                                                <img class="img-fluid" src="img/webDevelopment/education/education1.png"
-                                                    alt="image">
+                                                <img class="img-fluid" src="img/webDevelopment/education/education1.png" alt="image">
                                                 <div class="portfolio-btn">
-                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
-                                                        target="_blank" href="https://ase-education8.netlify.app/">
+                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" target="_blank" href="https://ase-education8.netlify.app/">
                                                         <i class="fa fa-eye"></i>
                                                     </a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-3 col-md-6 portfolio-item travel">
+                                        <div class="col-lg-4 col-md-6 portfolio-item travel">
                                             <div class="portfolio-img rounded overflow-hidden">
-                                                <img class="img-fluid" src="img/webDevelopment/travel/travel1.png"
-                                                    alt="image">
+                                                <img class="img-fluid" src="img/webDevelopment/travel/travel1.png" alt="image">
                                                 <div class="portfolio-btn">
-                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
-                                                        target="_blank" href="https://euro-travel-agency.netlify.app/">
+                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" target="_blank" href="https://euro-travel-agency.netlify.app/">
                                                         <i class="fa fa-eye"></i>
                                                     </a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-3 col-md-6 portfolio-item travel">
+                                        <div class="col-lg-4 col-md-6 portfolio-item education">
                                             <div class="portfolio-img rounded overflow-hidden">
-                                                <img class="img-fluid" src="img/webDevelopment/medical/dental5.png"
-                                                    alt="image">
+                                                <img class="img-fluid" src="img/webDevelopment/education/education2.png" alt="image">
                                                 <div class="portfolio-btn">
-                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
-                                                        target="_blank" href="https://euro-travel-agency.netlify.app/">
+                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" target="_blank" href="https://ase-education6.netlify.app/">
                                                         <i class="fa fa-eye"></i>
                                                     </a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-3 col-md-6 portfolio-item education">
+                                        <div class="col-lg-4 col-md-6 portfolio-item medical">
                                             <div class="portfolio-img rounded overflow-hidden">
-                                                <img class="img-fluid" src="img/webDevelopment/education/education2.png"
-                                                    alt="image">
+                                                <img class="img-fluid" src="img/webDevelopment/medical/dental4.png" alt="image">
                                                 <div class="portfolio-btn">
-                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
-                                                        target="_blank" href="https://ase-education6.netlify.app/">
+                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" target="_blank" href="https://asetechnologies.in/projects/dental4/">
                                                         <i class="fa fa-eye"></i>
                                                     </a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-3 col-md-6 portfolio-item medical">
+                                        <div class="col-lg-4 col-md-6 portfolio-item education">
                                             <div class="portfolio-img rounded overflow-hidden">
-                                                <img class="img-fluid" src="img/webDevelopment/medical/dental4.png"
-                                                    alt="image">
+                                                <img class="img-fluid" src="img/webDevelopment/education/education4.png" alt="image">
                                                 <div class="portfolio-btn">
-                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
-                                                        target="_blank"
-                                                        href="https://asetechnologies.in/projects/dental4/">
+                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" target="_blank" href="https://ase-education12.netlify.app/">
                                                         <i class="fa fa-eye"></i>
                                                     </a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-3 col-md-6 portfolio-item education">
+                                        <div class="col-lg-4 col-md-6 portfolio-item constructions">
                                             <div class="portfolio-img rounded overflow-hidden">
-                                                <img class="img-fluid" src="img/webDevelopment/education/education4.png"
-                                                    alt="image">
+                                                <img class="img-fluid" src="img/webDevelopment/constructions/construction4.png" alt="image">
                                                 <div class="portfolio-btn">
-                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
-                                                        target="_blank" href="https://ase-education12.netlify.app/">
+                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" target="_blank" href="https://asetechnologies.in/projects/construction4/">
                                                         <i class="fa fa-eye"></i>
                                                     </a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-3 col-md-6 portfolio-item constructions">
+                                        <div class="col-lg-4 col-md-6 portfolio-item events">
                                             <div class="portfolio-img rounded overflow-hidden">
-                                                <img class="img-fluid"
-                                                    src="img/webDevelopment/constructions/construction4.png"
-                                                    alt="image">
+                                                <img class="img-fluid" src="img/webDevelopment/events/event1.png" alt="image">
                                                 <div class="portfolio-btn">
-                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
-                                                        target="_blank"
-                                                        href="https://asetechnologies.in/projects/construction4/">
+                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" target="_blank" href="https://ase-events1.netlify.app/">
                                                         <i class="fa fa-eye"></i>
                                                     </a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-3 col-md-6 portfolio-item events">
+                                        <div class="col-lg-4 col-md-6 portfolio-item education">
                                             <div class="portfolio-img rounded overflow-hidden">
-                                                <img class="img-fluid" src="img/webDevelopment/events/event1.png"
-                                                    alt="image">
+                                                <img class="img-fluid" src="img/webDevelopment/education/education3.png" alt="image">
                                                 <div class="portfolio-btn">
-                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
-                                                        target="_blank" href="https://ase-events1.netlify.app/">
+                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" target="_blank" href="https://ase-education2.netlify.app/">
                                                         <i class="fa fa-eye"></i>
                                                     </a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-3 col-md-6 portfolio-item education">
+                                        <div class="col-lg-4 col-md-6 portfolio-item events">
                                             <div class="portfolio-img rounded overflow-hidden">
-                                                <img class="img-fluid" src="img/webDevelopment/education/education3.png"
-                                                    alt="image">
+                                                <img class="img-fluid" src="img/webDevelopment/events/event2.png" alt="image">
                                                 <div class="portfolio-btn">
-                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
-                                                        target="_blank" href="https://ase-education2.netlify.app/">
+                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" target="_blank" href="https://ase-events2.netlify.app/">
                                                         <i class="fa fa-eye"></i>
                                                     </a>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col-lg-3 col-md-6 portfolio-item events">
-                                            <div class="portfolio-img rounded overflow-hidden">
-                                                <img class="img-fluid" src="img/webDevelopment/events/event2.png"
-                                                    alt="image">
-                                                <div class="portfolio-btn">
-                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
-                                                        target="_blank" href="https://ase-events2.netlify.app/">
-                                                        <i class="fa fa-eye"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                             </div>
@@ -1104,47 +1069,35 @@
                                     </div> -->
                                 </div>
                                 <div class="row g-4 portfolio-container2 wow " data-wow-delay="0.1s">
-                                    <div class="col-lg-4 col-md-6 portfolio-image ">
-                                        <div class="portfolio-img rounded overflow-hidden">
-                                            <img class="img-fluid" src="img/graphicDesign/webDesign1.jpeg" alt="image">
-                                            <div class="portfolio-btn">
-                                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
-                                                    href="img/graphicDesign/webDesign1.jpeg" data-lightbox="portfolio">
-                                                    <i class="fa fa-eye"></i>
-                                                </a>
+                                    <?php
+                                    $sqlGD = "SELECT * FROM previewdata where category = 'graphicDesign'";
+                                    $resultGD = $conn->query($sqlGD);
+                                    // var_dump($resultGD);
+                                    $countGD = $resultGD->rowCount();
+                                    if ($countGD > 0) {
+                                        while ($rowGD = $resultGD->fetch(PDO::FETCH_ASSOC)) {
+                                    ?>
+                                            <div class="col-lg-4 col-md-6 portfolio-image">
+                                                <div class="portfolio-img rounded overflow-hidden">
+                                                    <img class="img-fluid" src="img/<?php echo ($rowGD['category'] . '/' . $rowGD['previewImage']) ?>" alt="<?php echo $rowGD['previewImage'] ?>">
+
+                                                    <div class="portfolio-btn">
+                                                        <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/<?php echo ($rowGD['category'] . '/' . $rowGD['previewImage']) ?>" data-lightbox="portfolio">
+                                                            <i class="fa fa-eye"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 portfolio-image ">
+                                    <?php
+                                        }
+                                    }
+                                    ?>
+
+                                    <!-- <div class="col-lg-4 col-md-6 portfolio-image ">
                                         <div class="portfolio-img rounded overflow-hidden">
                                             <img class="img-fluid" src="img/graphicDesign/logoDesign1.jpeg" alt="image">
                                             <div class="portfolio-btn">
-                                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
-                                                    href="img/graphicDesign/logoDesign1.jpeg" data-lightbox="portfolio">
-                                                    <i class="fa fa-eye"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 portfolio-image ">
-                                        <div class="portfolio-img rounded overflow-hidden">
-                                            <img class="img-fluid" src="img/graphicDesign/branding.jpeg" alt="image">
-                                            <div class="portfolio-btn">
-                                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
-                                                    href="img/graphicDesign/branding.jpeg" data-lightbox="portfolio">
-                                                    <i class="fa fa-eye"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 portfolio-image ">
-                                        <div class="portfolio-img rounded overflow-hidden">
-                                            <img class="img-fluid" src="img/graphicDesign/brochureDesign1.jpeg"
-                                                alt="image">
-                                            <div class="portfolio-btn">
-                                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
-                                                    href="img/graphicDesign/brochureDesign1.jpeg"
-                                                    data-lightbox="portfolio">
+                                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/graphicDesign/logoDesign1.jpeg" data-lightbox="portfolio">
                                                     <i class="fa fa-eye"></i>
                                                 </a>
                                             </div>
@@ -1154,21 +1107,7 @@
                                         <div class="portfolio-img rounded overflow-hidden">
                                             <img class="img-fluid" src="img/graphicDesign/webDesign2.jpeg" alt="image">
                                             <div class="portfolio-btn">
-                                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
-                                                    href="img/graphicDesign/webDesign2.jpeg" data-lightbox="portfolio">
-                                                    <i class="fa fa-eye"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 portfolio-image ">
-                                        <div class="portfolio-img rounded overflow-hidden">
-                                            <img class="img-fluid" src="img/graphicDesign/stationarySet.jpeg"
-                                                alt="image">
-                                            <div class="portfolio-btn">
-                                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
-                                                    href="img/graphicDesign/stationarySet.jpeg"
-                                                    data-lightbox="portfolio">
+                                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/graphicDesign/webDesign2.jpeg" data-lightbox="portfolio">
                                                     <i class="fa fa-eye"></i>
                                                 </a>
                                             </div>
@@ -1178,8 +1117,7 @@
                                         <div class="portfolio-img rounded overflow-hidden">
                                             <img class="img-fluid" src="img/graphicDesign/logoDesign2.jpeg" alt="image">
                                             <div class="portfolio-btn">
-                                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
-                                                    href="img/graphicDesign/logoDesign2.jpeg" data-lightbox="portfolio">
+                                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/graphicDesign/logoDesign2.jpeg" data-lightbox="portfolio">
                                                     <i class="fa fa-eye"></i>
                                                 </a>
                                             </div>
@@ -1189,26 +1127,12 @@
                                         <div class="portfolio-img rounded overflow-hidden">
                                             <img class="img-fluid" src="img/graphicDesign/webDesign3.jpeg" alt="image">
                                             <div class="portfolio-btn">
-                                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
-                                                    href="img/graphicDesign/webDesign3.jpeg" data-lightbox="portfolio">
+                                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/graphicDesign/webDesign3.jpeg" data-lightbox="portfolio">
                                                     <i class="fa fa-eye"></i>
                                                 </a>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 portfolio-image ">
-                                        <div class="portfolio-img rounded overflow-hidden">
-                                            <img class="img-fluid" src="img/graphicDesign/brochureDesign2.jpeg"
-                                                alt="image">
-                                            <div class="portfolio-btn">
-                                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
-                                                    href="img/graphicDesign/brochureDesign2.jpeg"
-                                                    data-lightbox="portfolio">
-                                                    <i class="fa fa-eye"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -1224,76 +1148,90 @@
                                     </div>
 
                                     <div class="row g-4 portfolio-container3 wow fadeInUp" data-wow-delay="0.1s">
-                                        <div class="col-lg-4 col-md-6 portfolio-image medical">
+                                        <?php
+                                        $sqlDM = "SELECT * FROM previewdata where category = 'digitalMarketing'";
+                                        $resultDM = $conn->query($sqlDM);
+                                        // var_dump($resultDM);
+                                        $countDM = $resultDM->rowCount();
+                                        if ($countDM > 0) {
+                                            while ($rowDM = $resultDM->fetch(PDO::FETCH_ASSOC)) {
+                                        ?>
+                                                <div class="col-lg-4 col-md-6 portfolio-image">
+                                                    <div class="portfolio-img rounded overflow-hidden">
+                                                        <img class="img-fluid" src="img/<?php echo ($rowDM['category'] . '/' . $rowDM['previewImage']) ?>" alt="<?php echo $rowDM['previewImage'] ?>">
+
+                                                        <div class="portfolio-btn">
+                                                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/<?php echo ($rowDM['category'] . '/' . $rowDM['previewImage']) ?>" data-lightbox="portfolio">
+                                                                <i class="fa fa-eye"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                        <?php
+                                            }
+                                        }
+                                        ?>
+
+                                        <!-- <div class="col-lg-4 col-md-6 portfolio-image">
                                             <div class="portfolio-img rounded overflow-hidden">
-                                                <img class="img-fluid" src="img/digitalMarketing/onAndOffPageSEO.jpeg"
-                                                    alt="image">
+                                                <img class="img-fluid" src="img/digitalMarketing/onAndOffPageSEO.jpeg" alt="image">
                                                 <div class="portfolio-btn">
-                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
-                                                        href="img/digitalMarketing/onAndOffPageSEO.jpeg"
-                                                        data-lightbox="portfolio">
+                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/digitalMarketing/onAndOffPageSEO.jpeg" data-lightbox="portfolio">
                                                         <i class="fa fa-eye"></i>
                                                     </a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-md-6 portfolio-image medical">
+                                        <div class="col-lg-4 col-md-6 portfolio-image">
                                             <div class="portfolio-img rounded overflow-hidden">
-                                                <img class="img-fluid" src="img/digitalMarketing/googleAdWords.jpeg"
-                                                    alt="image">
+                                                <img class="img-fluid" src="img/digitalMarketing/googleAdWords.jpeg" alt="image">
                                                 <div class="portfolio-btn">
-                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
-                                                        href="img/digitalMarketing/googleAdWords.jpeg"
-                                                        data-lightbox="portfolio">
+                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/digitalMarketing/googleAdWords.jpeg" data-lightbox="portfolio">
                                                         <i class="fa fa-eye"></i>
                                                     </a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-md-6 portfolio-image medical">
+                                        <div class="col-lg-4 col-md-6 portfolio-image">
                                             <div class="portfolio-img rounded overflow-hidden">
                                                 <img class="img-fluid" src="img/digitalMarketing/sem.jpeg" alt="image">
                                                 <div class="portfolio-btn">
-                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
-                                                        href="img/digitalMarketing/sem.jpeg" data-lightbox="portfolio">
+                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/digitalMarketing/sem.jpeg" data-lightbox="portfolio">
                                                         <i class="fa fa-eye"></i>
                                                     </a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-md-6 portfolio-image medical">
+                                        <div class="col-lg-4 col-md-6 portfolio-image">
                                             <div class="portfolio-img rounded overflow-hidden">
                                                 <img class="img-fluid" src="img/digitalMarketing/seo1.jpeg" alt="image">
                                                 <div class="portfolio-btn">
-                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
-                                                        href="img/digitalMarketing/seo1.jpeg" data-lightbox="portfolio">
+                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/digitalMarketing/seo1.jpeg" data-lightbox="portfolio">
                                                         <i class="fa fa-eye"></i>
                                                     </a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-md-6 portfolio-image medical">
+                                        <div class="col-lg-4 col-md-6 portfolio-image">
                                             <div class="portfolio-img rounded overflow-hidden">
                                                 <img class="img-fluid" src="img/digitalMarketing/smm.jpeg" alt="image">
                                                 <div class="portfolio-btn">
-                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
-                                                        href="img/digitalMarketing/smm.jpeg" data-lightbox="portfolio">
+                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/digitalMarketing/smm.jpeg" data-lightbox="portfolio">
                                                         <i class="fa fa-eye"></i>
                                                     </a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-md-6 portfolio-image medical">
+                                        <div class="col-lg-4 col-md-6 portfolio-image">
                                             <div class="portfolio-img bg-info rounded overflow-hidden">
                                                 <img class="img-fluid" src="img/digitalMarketing/seo.jpeg" alt="image">
                                                 <div class="portfolio-btn">
-                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
-                                                        href="img/digitalMarketing/seo.jpeg" data-lightbox="portfolio">
+                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/digitalMarketing/seo.jpeg" data-lightbox="portfolio">
                                                         <i class="fa fa-eye"></i>
                                                     </a>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                             </div>
@@ -1309,14 +1247,34 @@
                                         </div>
                                     </div>
                                     <div class="row g-4 portfolio-container4 wow fadeInUp" data-wow-delay="0.1s">
-                                        <div class="col-lg-4 col-md-6 portfolio-image">
+                                        <?php
+                                        $sqlCM = "SELECT * FROM previewdata where category = 'contentMarketing'";
+                                        $resultCM = $conn->query($sqlCM);
+                                        // var_dump($resultCM);
+                                        $countCM = $resultCM->rowCount();
+                                        if ($countCM > 0) {
+                                            while ($rowCM = $resultCM->fetch(PDO::FETCH_ASSOC)) {
+                                        ?>
+                                                <div class="col-lg-4 col-md-6 portfolio-image">
+                                                    <div class="portfolio-img rounded overflow-hidden">
+                                                        <img class="img-fluid" src="img/<?php echo ($rowCM['category'] . '/' . $rowCM['previewImage']) ?>" alt="<?php echo $rowCM['previewImage'] ?>">
+
+                                                        <div class="portfolio-btn">
+                                                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/<?php echo ($rowCM['category'] . '/' . $rowCM['previewImage']) ?>" data-lightbox="portfolio">
+                                                                <i class="fa fa-eye"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                        <?php
+                                            }
+                                        }
+                                        ?>
+                                        <!-- <div class="col-lg-4 col-md-6 portfolio-image">
                                             <div class="portfolio-img rounded overflow-hidden">
-                                                <img class="img-fluid" src="img/contentMarketing/websiteContent.jpeg"
-                                                    alt="image">
+                                                <img class="img-fluid" src="img/contentMarketing/websiteContent.jpeg" alt="image">
                                                 <div class="portfolio-btn">
-                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
-                                                        href="img/contentMarketing/websiteContent.jpeg"
-                                                        data-lightbox="portfolio">
+                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/contentMarketing/websiteContent.jpeg" data-lightbox="portfolio">
                                                         <i class="fa fa-eye"></i>
                                                     </a>
                                                 </div>
@@ -1324,12 +1282,9 @@
                                         </div>
                                         <div class="col-lg-4 col-md-6 portfolio-image">
                                             <div class="portfolio-img rounded overflow-hidden">
-                                                <img class="img-fluid" src="img/contentMarketing/blogWriting.jpeg"
-                                                    alt="image">
+                                                <img class="img-fluid" src="img/contentMarketing/blogWriting.jpeg" alt="image">
                                                 <div class="portfolio-btn">
-                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
-                                                        href="img/contentMarketing/blogWriting.jpeg"
-                                                        data-lightbox="portfolio">
+                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/contentMarketing/blogWriting.jpeg" data-lightbox="portfolio">
                                                         <i class="fa fa-eye"></i>
                                                     </a>
                                                 </div>
@@ -1337,12 +1292,9 @@
                                         </div>
                                         <div class="col-lg-4 col-md-6 portfolio-image">
                                             <div class="portfolio-img rounded overflow-hidden">
-                                                <img class="img-fluid"
-                                                    src="img/contentMarketing/campaignPosterContent.jpeg" alt="image">
+                                                <img class="img-fluid" src="img/contentMarketing/campaignPosterContent.jpeg" alt="image">
                                                 <div class="portfolio-btn">
-                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
-                                                        href="img/contentMarketing/campaignPosterContent.jpeg"
-                                                        data-lightbox="portfolio">
+                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/contentMarketing/campaignPosterContent.jpeg" data-lightbox="portfolio">
                                                         <i class="fa fa-eye"></i>
                                                     </a>
                                                 </div>
@@ -1350,12 +1302,9 @@
                                         </div>
                                         <div class="col-lg-4 col-md-6 portfolio-image">
                                             <div class="portfolio-img rounded overflow-hidden">
-                                                <img class="img-fluid" src="img/contentMarketing/smmPosterContent.jpeg"
-                                                    alt="image">
+                                                <img class="img-fluid" src="img/contentMarketing/smmPosterContent.jpeg" alt="image">
                                                 <div class="portfolio-btn">
-                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
-                                                        href="img/contentMarketing/smmPosterContent.jpeg"
-                                                        data-lightbox="portfolio">
+                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/contentMarketing/smmPosterContent.jpeg" data-lightbox="portfolio">
                                                         <i class="fa fa-eye"></i>
                                                     </a>
                                                 </div>
@@ -1363,17 +1312,14 @@
                                         </div>
                                         <div class="col-lg-4 col-md-6 portfolio-image">
                                             <div class="portfolio-img rounded overflow-hidden">
-                                                <img class="img-fluid" src="img/contentMarketing/seoContent.jpeg"
-                                                    alt="image">
+                                                <img class="img-fluid" src="img/contentMarketing/seoContent.jpeg" alt="image">
                                                 <div class="portfolio-btn">
-                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
-                                                        href="img/contentMarketing/seoContent.jpeg"
-                                                        data-lightbox="portfolio">
+                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/contentMarketing/seoContent.jpeg" data-lightbox="portfolio">
                                                         <i class="fa fa-eye"></i>
                                                     </a>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                             </div>
@@ -1520,8 +1466,7 @@
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message"
-                                        style="height: 100px"></textarea>
+                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
                                     <label for="message">Message</label>
                                 </div>
                             </div>
@@ -1541,22 +1486,13 @@
     <div class="container-xxl pt-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container-xxl pt-5 px-0 row row-cols-1 row-cols-md-3">
             <div class="col">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3041.841607812502!2d-74.65418431598664!3d40.32367269785276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3e12fb0d9d989%3A0x69cacc85d3055363!2s701%20Carnegie%20Center%20Princeton%2C%20Princeton%2C%20NJ%2008540%2C%20USA!5e0!3m2!1sen!2sin!4v1689663565440!5m2!1sen!2sin"
-                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3041.841607812502!2d-74.65418431598664!3d40.32367269785276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3e12fb0d9d989%3A0x69cacc85d3055363!2s701%20Carnegie%20Center%20Princeton%2C%20Princeton%2C%20NJ%2008540%2C%20USA!5e0!3m2!1sen!2sin!4v1689663565440!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="col">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3800.044934724952!2d83.30888321744385!3d17.742521800000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a39438dab92a6ef%3A0x9adb8a655b5e380b!2sASE%20Technologies%20%7C%20Digital%20Marketing%20Company%20in%20Visakhapatnam!5e0!3m2!1sen!2sin!4v1689664554031!5m2!1sen!2sin"
-                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3800.044934724952!2d83.30888321744385!3d17.742521800000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a39438dab92a6ef%3A0x9adb8a655b5e380b!2sASE%20Technologies%20%7C%20Digital%20Marketing%20Company%20in%20Visakhapatnam!5e0!3m2!1sen!2sin!4v1689664554031!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="col">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.197304561097!2d78.54376362483042!3d17.40231643348739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb993e9c406ebd%3A0xf2e3c2fc7e02a425!2sNSL%20ARENA%2C%20Hyderabad%2C%20Telangana%20500013!5e0!3m2!1sen!2sin!4v1689663606636!5m2!1sen!2sin"
-                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.197304561097!2d78.54376362483042!3d17.40231643348739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb993e9c406ebd%3A0xf2e3c2fc7e02a425!2sNSL%20ARENA%2C%20Hyderabad%2C%20Telangana%20500013!5e0!3m2!1sen!2sin!4v1689663606636!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </div>
@@ -1571,8 +1507,7 @@
                     <!-- <a class="border-bottom text-secondary" href="#">Your Site Name</a>, All Right Reserved. -->
                 </div>
                 <div class="col-md-6 text-center text-md-end">
-                    &copy; Designed & Developed By <a class="border-bottom text-secondary"
-                        href="https://asetechnologies.in">ASE Technologies</a>
+                    &copy; Designed & Developed By <a class="border-bottom text-secondary" href="https://asetechnologies.in">ASE Technologies</a>
                 </div>
             </div>
         </div>

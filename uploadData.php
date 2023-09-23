@@ -1,5 +1,5 @@
 <?php
-include_once("./conn.php");
+include_once("./connection.php");
 
 if (isset($_POST['Submit'])) {
     // $sno = $_POST['sno'];
@@ -22,13 +22,15 @@ if (isset($_POST['Submit'])) {
     $previewImage = str_replace(" ", "", $file_name);
 
     if ($category == "webDevelopment") {
-        move_uploaded_file($file_tmp, "./img/webDevelopment/" . $typeOf . "/" . $previewImage);
+        $img = move_uploaded_file($file_tmp, "./img/webDevelopment/" . $typeOf . "/" . $previewImage);
     } else {
-        move_uploaded_file($file_tmp, "./img/" . $category . "/" . $previewImage);
+        $img = move_uploaded_file($file_tmp, "./img/" . $category . "/" . $previewImage);
     }
 
 
-    $result = "INSERT INTO previewdata (category,typeOf,previewURL,previewImage) VALUES ('$category','$typeOf','$previewURL','$previewImage')";
+    if (($img != null) && ($category != null)) {
+        $result = "INSERT INTO previewdata (category,typeOf,previewURL,previewImage) VALUES ('$category','$typeOf','$previewURL','$previewImage')";
+    }
     // var_dump($result);
     $res = $conn->query($result);
     // var_dump($res);
@@ -43,8 +45,8 @@ if (isset($_POST['Submit'])) {
 }
 ?>
 
-<!-- <script>
+<script>
     setTimeout(function() {
-        window.location.href = './index.html';
-    }, 1500);
-</script> -->
+        window.location.href = './upload.php';
+    }, 100);
+</script>
